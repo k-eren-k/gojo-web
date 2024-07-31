@@ -1,0 +1,115 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #0F0F0F;
+    background: linear-gradient(180deg, rgba(21, 36, 70, 1) 0%, rgba(15, 15, 15, 1) 48%, rgba(15, 15, 15, 1) 52%, rgba(15, 15, 15, 1) 100%);
+    background-repeat: no-repeat;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #080808;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #2563EB;
+}
+
+main {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 105px;
+    flex-direction: column;
+}
+
+main h1 {
+    font-size: 36px;
+    font-weight: 800;
+    color: rgba(255, 255, 255, 0.863);
+    margin-top: 8px;
+}
+
+main p {
+    font-size: 16px;
+    max-width: 580px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.185);
+    margin-top: -6px;
+}
+
+.main-buttons {
+    margin-top: 16px;
+    gap: 15px;
+}
+
+.main-buttons button {
+    background: rgb(44, 104, 231);
+    padding-top: 11px;
+    cursor: pointer;
+    padding-bottom: 11px;
+    padding-left: 22px;
+    color: #e2e3e6;
+    border: none;
+    font-family: 600;
+    text-decoration: none;
+    margin-left: 2px;
+    margin-right: 2px;
+    box-shadow: 0 4px 8px rgba(44, 103, 231, 0.253);
+    font-size: 14px;
+    border-radius: 10px;
+    padding-right: 22px;
+    background: linear-gradient(105deg, rgba(44, 104, 231, 1) 0%, rgba(56, 124, 243, 1) 100%);
+}
+
+.main-buttons button:hover {
+    color: white;
+    background: linear-gradient(105deg, rgba(30, 73, 188, 1) 0%, rgba(50, 107, 208, 1) 100%);
+}
+
+#vote {
+    background: rgb(224, 169, 12);
+    box-shadow: 0 4px 8px rgba(224, 167, 12, 0.26);
+    background: linear-gradient(105deg, rgba(224, 169, 12, 1) 0%, rgba(227, 173, 13, 1) 100%);
+}
+
+.main-logo {
+    height: 400px;
+    width: 400px;
+}
+
+@media (max-width: 767px) {
+    .main-buttons {
+        display: flex;
+    }
+
+    .main-buttons button {
+        width: auto;
+        max-width: none;
+    }
+
+    main h1 {
+        margin-left: 15px;
+        margin-right: 15px;
+        font-size: 28px;
+    }
+
+    main p {
+        margin-left: 15px;
+        margin-right: 15px;
+        font-size: 14px;
+    }
+
+    .main-logo {
+        width: 100%;
+    }
+}

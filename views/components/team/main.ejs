@@ -1,0 +1,15 @@
+<div class="container">
+  <h2><i class="fa-solid fa-stars"></i> Team Members </h2>
+  <div class="team-flex">
+    <% teamMembers.forEach(member => { %>
+    <div class="team-member">
+      <img src="<%= member.image %>" alt="<%= member.name %>">
+      <div class="member-info">
+        <h2><%= member.name %></h2>
+        <p class="role"><i class="fa-solid fa-user-gear"></i> Developer</p>
+
+      </div>
+    </div>
+    <% }); %>
+  </div>
+</div>

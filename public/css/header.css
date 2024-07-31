@@ -1,0 +1,224 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+
+
+
+nav {
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1150px;
+    padding: 0 20px;
+    margin-left: auto;
+    margin-right: auto;
+    backdrop-filter: blur(8px);
+    background: transparent;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+
+.logo {
+    height: 48px;
+    width: auto;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    color: #60A5FA;
+}
+
+.buttons {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttons button {
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    background-color: transparent;
+    color: #C4C8D0;
+    font-weight: 500;
+    font-size: 16px;
+    transition: all 0.1s ease-out;
+    border-bottom: 2px solid transparent;
+}
+
+.buttons button:hover {
+    color: white;
+    border-bottom: 2px solid #3B82F6;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.info a {
+    padding: 9px 20px;
+    font-family: 600;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 16px;
+    box-shadow: 0 4px 8px rgba(44, 103, 231, 0.253);
+    color: #e2e3e6;
+    background: rgb(34, 87, 221);
+    background: linear-gradient(105deg, rgba(34, 87, 221, 1) 0%, rgba(56, 124, 243, 1) 100%);
+}
+
+.info a:hover {
+    color: white;
+    background: linear-gradient(105deg, rgba(30, 73, 188, 1) 0%, rgba(50, 107, 208, 1) 100%);
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+}
+
+.hamburger div {
+    width: 30px;
+    height: 3px;
+    background-color: #C4C8D0;
+    border-radius: 5px;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    height: 100%;
+    width: 250px;
+    background: #11111133;
+    z-index: 9999;
+    color: #C4C8D0;
+    backdrop-filter: blur(10px);
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    z-index: 1000;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.sidebar.show {
+    transform: translateX(250px);
+}
+
+.sidebar a {
+    color: #ffffff8c;
+    text-decoration: none;
+    font-size: 18px;
+    gap: 7px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 400;
+    justify-content: left;
+    height: 56px;
+    padding-left: 20px;
+}
+
+.sidebar i {
+    margin-left: 5px;
+}
+
+.side-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+    border: 1px solid #2A2F39;
+}
+
+.side-header h1 {
+    font-size: 27px;
+    color: #60A5FA;
+    font-weight: 800;
+}
+
+.side-header button {
+    display: flex;
+    justify-content: center;
+    color: #C4C8D0;
+    align-items: center;
+    border: none;
+    font-weight: 600;
+    height: 35px;
+    width: 35px;
+    border-radius: 10px;
+    background-color: transparent;
+}
+
+.side-header button:hover {
+    display: flex;
+    justify-content: center;
+    color: white;
+    align-items: center;
+    background-color: #0f0f0f2c;
+}
+
+.sidebar a:focus {
+    color: white;
+    background-color: #0c0d10ab;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.overlay.show {
+    display: flex;
+}
+
+#hamburger {
+    font-size: 25px;
+    padding: 7px;
+    color: rgba(255, 255, 255, 0.678);
+}
+
+#hamburger:hover {
+    background-color: #0f0f0f2c;
+    padding: 7px;
+    border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+    nav {
+        width: 100%;
+    }
+
+    .buttons {
+        display: none;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+}

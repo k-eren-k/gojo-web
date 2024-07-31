@@ -1,0 +1,118 @@
+.bilgi {
+    margin-top: 150px;
+    max-width: 1150px;
+    padding: 0 20px;
+    /* Add padding for better mobile view */
+}
+
+.bilgi-info {
+    background-color: #15151571;
+    backdrop-filter: blur(2px);
+    width: 100%;
+    height: 226px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    margin-top: 155px;
+    border-radius: 12px;
+    box-shadow: 0px 0px 6px rgba(94, 131, 255, 0.151);
+    flex-direction: row-reverse;
+    /* Ensure image is on the right */
+}
+
+.bilgi-text {
+    margin-left: auto;
+}
+
+.bilgi-text h2 {
+    font-size: 30px;
+    font-weight: 600;
+    color: #FFFFFF;
+}
+
+.bilgi-text i {
+    color: #3B82F6;
+}
+
+.bilgi-text p {
+    width: 80%;
+    font-size: 16px;
+    text-align: left;
+    font-weight: 600;
+    color: #6B7280;
+}
+
+.bilgi-img {
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.329);
+    border-radius: 10px;
+    cursor: pointer;
+    height: 324px;
+    transition: all 0.2s ease-out;
+}
+
+.bilgi-img:hover {
+    transform: scale(1.009);
+    box-shadow: 0 5px 25px rgba(44, 103, 231, 0.048);
+}
+
+.bilgi-img:focus {
+    opacity: 0.5;
+    backdrop-filter: blur(5px);
+}
+
+@media (max-width: 768px) {
+    .bilgi {
+        margin-top: 100px;
+    }
+
+    .bilgi-info {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 50px;
+        padding: 15px;
+    }
+
+    .bilgi-text {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .bilgi-text p {
+        margin-top: 4px;
+        margin-bottom: 12px;
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .bilgi-text h2 {
+        font-size: 24px;
+    }
+
+    .bilgi-img {
+        height: 200px;
+        width: 100%;
+        box-shadow: 0px 0px 17px rgba(94, 132, 255, 0.021);
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .bilgi {
+        margin-top: 80px;
+    }
+
+    .bilgi-text p {
+        font-size: 12px;
+    }
+
+    .bilgi-text h2 {
+        font-size: 20px;
+    }
+
+    .bilgi-img {
+        height: 150px;
+    }
+}

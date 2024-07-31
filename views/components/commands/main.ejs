@@ -1,0 +1,21 @@
+<div class="dropdown-container">
+  <div class="relative inline-block text-left w-full">
+    <h1 class="h1-text"><i class="fa-solid fa-gear"></i> Bot Commands</h1>
+    <p class="p-text">You can get information about the commands of the Gojo.</p>
+    <button id="dropdown-button" type="button" class="dropdown-button flex items-center justify-start">
+      <i class="fa-solid fa-hashtag dropdown-icon"></i>
+      View Commands List
+    </button>
+    <div id="dropdown-menu" class="dropdown-menu">
+      <ul class="py-1">
+        <% commands.forEach(command => { %>
+        <li>
+          <a href="#" class="dropdown-item">
+            <%= command.label %>
+          </a>
+        </li>
+        <% }); %>
+      </ul>
+    </div>
+  </div>
+</div>
